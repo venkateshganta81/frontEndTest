@@ -1,0 +1,24 @@
+<div class="speed-zones-wrapper">
+    <div class="speed-zones-line">
+        <div>
+            <canvas baseChart [datasets]="lineChartData" [labels]="lineChartLabels" [options]="lineChartOptions" [colors]="lineChartColors"
+                [legend]="lineChartLegend" [chartType]="lineChartType" (chartHover)="chartHovered($event)" (chartClick)="chartClicked($event)"></canvas>
+
+        </div>
+    </div>
+</div>
+<div class="count-zones-wrapper">
+    <h4>Count by zones</h4>
+    <div class="count-zone-bar">
+        <canvas baseChart [datasets]="barChartData" [labels]="barChartLabels" [options]="barChartOptions" [colors]="barChartColor"
+            [legend]="barChartLegend" [chartType]="barChartType" (chartHover)="chartHovered($event)" (chartClick)="chartClicked($event)"></canvas>
+    </div>
+</div>
+<div class="speed-average-wrapper">
+
+    <div class="speed-average-pie">
+        <canvas baseChart [data]="doughnutChartData" [labels]="doughnutChartLabels" [chartType]="doughnutChartType" (chartHover)="chartHovered($event)"
+            (chartClick)="chartClicked($event)"></canvas>
+    </div>
+</div>
+<div class="clearfix"></div>

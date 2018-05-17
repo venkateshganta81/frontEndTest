@@ -1,16 +1,30 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { Routes, RouterModule } from '@angular/router';
+import { ChartsModule } from 'ng2-charts';
+
+
 
 
 import { AppComponent } from './app.component';
+import { AnalyticsComponent } from './analytics/analytics.component';
+
+
+
+const appRoutes : Routes = [
+  { path : 'analytics' , component : AnalyticsComponent }
+]; 
 
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    AnalyticsComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    ChartsModule,
+    RouterModule.forRoot(appRoutes),
   ],
   providers: [],
   bootstrap: [AppComponent]

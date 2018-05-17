@@ -1,0 +1,25 @@
+.speed-zones-wrapper{
+    margin: 40px;
+    width: 90%;
+    height:auto;
+    padding: 20px;
+    background: #fff;
+    border: 1px solid #ccc;
+}
+.count-zones-wrapper{
+    height: 400px;
+    width: 50%;
+    margin: 20px 40px;
+    float: left;
+    background: #fff;
+    padding: 15px;
+    border: 1px solid #ccc;
+}
+.speed-average-wrapper{
+    height: 500px;
+    width: 35%;
+    float: left;
+}
+.clearfix{
+    clear: both;
+}
