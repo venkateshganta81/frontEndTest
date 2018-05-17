@@ -12,6 +12,7 @@ import { AnalyticsComponent } from './analytics/analytics.component';
 
 
 const appRoutes : Routes = [
+  { path : '' , redirectTo: '/analytics' , pathMatch:'full' }
   { path : 'analytics' , component : AnalyticsComponent }
 ]; 
 
